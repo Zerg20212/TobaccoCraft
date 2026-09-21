@@ -165,6 +165,6 @@ powershell -ExecutionPolicy Bypass -File .\integration\run.ps1 -PaperDirectory .
 =======
 
 
-Я не против поддержки для создание и проектирования мода для новых версий и старых версий
+Я не против поддержки для создание и проектирования плагина для новых версий и старых версий
 https://www.donationalerts.com/r/zerg20212
 >>>>>>> 26a7c55aad9888a531fe370e2b680f374ae9ff12
