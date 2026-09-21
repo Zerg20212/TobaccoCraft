@@ -1,0 +1,61 @@
+growth:
+  # Начальное время роста; каждый сорт далее настраивается в /tobacco editor.
+  days-required: 10
+  real-time-per-day-minutes: 20
+  check-interval-minutes: 5
+  # Модели ItemDisplay: LARGE_FERN, CustomModelData 1100–1103.
+  show-stage-display: true
+
+minigame:
+  green-slots-count: 2
+  slots-total: 6
+  red-move-interval-ticks: 3
+  timeout-seconds: 3
+  cooldown-seconds: 5
+  # Начальные награды: семена 100%, листья 50%. Шансы каждого сорта меняются в GUI.
+  reward:
+    seeds-min: 1
+    seeds-max: 3
+    leaf-min: 2
+    leaf-max: 4
+
+smoking:
+  effects-duration-seconds: 240
+  smoke-duration-seconds: 300
+  overdose-threshold: 3
+  overdose-damage: 12.0
+
+messages:
+  prefix: ''
+  no-permission: '§cУ вас нет прав!'
+  players-only: '§cЭта команда доступна только игроку.'
+  planted: ''
+  need-space: '§cНад грядкой нужны два свободных блока.'
+  plant-stage: '§eСтадия роста: §f{stage}/3 §7({name}).'
+  not-grown: '§eЭтот куст ещё не созрел. Стадия: {stage}/3.'
+  need-shears: '§eДля сбора нужны ножницы для табака.'
+  plant-protected: '§cЭтот куст можно собрать только ножницами для табака.'
+  minigame-start: ''
+  already-playing: '§cВы уже собираете табак.'
+  plant-busy: '§cЭтот куст уже собирает другой игрок.'
+  cooldown: '§eПодождите {seconds} сек. перед следующей попыткой.'
+  minigame-success: '§a✔ Успех!'
+  minigame-miss: '§c✘ Промах!'
+  minigame-timeout: '§c✘ Время вышло!'
+  minigame-cancelled: '§cСбор прерван.'
+  missing-resources: '§cНе хватает ресурсов: §f{resources}.'
+  machine-crafted: '§aТабачный станок создан!'
+  cigarette-crafted: ''
+  invalid-recipe: '§cНужны 2 листика табака в левом слоте и 3 обычные бумаги в правом.'
+  machine-input: ''
+  smoked: '§7Вы закурили.'
+  overdose: '§cВы перекурили! Вам стало плохо!'
+  given: '§aВыдано: {item} §a×{amount}.'
+  invalid-amount: '§cКоличество должно быть целым числом от 1 до 2304.'
+  unknown-item: '§cПредмет: seeds, leaf, shears, cigarette или machine.'
+  reloaded: '§aКонфигурация и данные перезагружены.'
+  reload-failed: '§cОшибка перезагрузки; прежние данные сохранены. Подробнее в консоли.'
+  cleared: '§aУдалено кустов в радиусе 50 блоков: {count}.'
+  grown: '§aВыращено кустов в радиусе 5 блоков: {count}.'
+  harvest-reward: '§aВыпало: семена ×{seeds}, листики ×{leaves}.'
+  unknown-command: '§cНеизвестная подкоманда. Введите /tobacco.'

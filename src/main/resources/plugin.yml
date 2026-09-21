@@ -1,0 +1,26 @@
+name: TobaccoCraft
+version: '${project.version}'
+main: com.example.tobaccocraft.TobaccoCraft
+api-version: '1.21.1'
+description: 'Выращивание табака, сбор, крафт и курение'
+author: Alexei
+commands:
+  tobacco:
+    description: 'Управление TobaccoCraft'
+    usage: '/tobacco [craft|give|reload|clear|grow|editor|info]'
+    permission: tobaccocraft.use
+    permission-message: '§cУ вас нет прав!'
+permissions:
+  tobaccocraft.use:
+    description: 'Информация о плагине'
+    default: true
+  tobaccocraft.farmer:
+    description: 'Посадка, сбор, крафт и курение'
+    default: true
+    children:
+      tobaccocraft.use: true
+  tobaccocraft.admin:
+    description: 'Все возможности и администрирование'
+    default: op
+    children:
+      tobaccocraft.farmer: true

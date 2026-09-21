@@ -1,0 +1,5 @@
+name: TobaccoSmokeProbe
+version: '1.0.0'
+main: com.example.tobaccocraft.integration.SmokeProbe
+api-version: '1.21.1'
+depend: [TobaccoCraft]
